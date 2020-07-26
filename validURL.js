@@ -1,3 +1,4 @@
+// Check if a JavaScript string is a URL
 // https://stackoverflow.com/questions/5717093/check-if-a-javascript-string-is-a-url
 
 function validURL(str) {
