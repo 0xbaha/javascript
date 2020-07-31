@@ -25,5 +25,5 @@ for (i = 0; i < sum; i++) {
     console.log("ID = " + JSON.parse(MentionedSTR)[i].id);
 }
 
-// referemce:
+// reference:
 // https://stackoverflow.com/questions/41336663/console-logresult-returns-object-object-how-do-i-get-result-name
