@@ -28,3 +28,4 @@ for (i = 0; i < sum; i++) {
 
 // reference:
 // https://stackoverflow.com/questions/41336663/console-logresult-returns-object-object-how-do-i-get-result-name
+// https://medium.com/javascript-in-plain-english/how-to-use-stringify-and-parse-in-javascript-6b637b571a32
