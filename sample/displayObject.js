@@ -22,6 +22,7 @@ if (sum > 0) {
 // print the ID of each mentioned user
 console.log("\n\n>>> print the ID of each mentioned user <<<\n");
 for (i = 0; i < sum; i++) {
+    // takes a JSON string and then transforms it into a JavaScript object
     console.log("ID = " + JSON.parse(MentionedSTR)[i].id);
 }
 
