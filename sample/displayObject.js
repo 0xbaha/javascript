@@ -14,18 +14,19 @@ var MentionedSTRbeauty = JSON.stringify(Mentioned, null, 4);
 console.log("\n>>> authorAvatarURL = " + authorAvatarURL);
 
 // check if there mentioned user exist
-if (sum > 0) {
+if (size > 0) {
   isMentioned = true; // exist
+  sumMentioned = size - 1;
   console.log("\nADA mention");
-  console.log("\n\n>>> sum = " + sum);
+  console.log("\n\n>>> size = " + size);
   console.log("\n\n>>> msg.mentions.users <<<\n\n" + Mentioned);
   console.log("\n\n>>> JSON.stringify(Mentioned) <<<\n\n" + MentionedSTR);  // print the object
   console.log("\n\n>>> JSON.stringify(Mentioned, null, 4) <<<\n\n" + MentionedSTRbeauty);  // beautify
 } else {
   isMentioned = false; // not exist
+  sumMentioned = 0;
   console.log("\nTIDAK ada mention");
 }
-
 
 avatarURLs = []; // inisialisasi
 // print the ID of each mentioned user
@@ -43,16 +44,9 @@ if (isMentioned){
 }
 
 // menampilkan avatar setiap yang dimention
-if (sum === 0) {
-  for (i = 0; i <= sum; i++) {
-    console.log("\navatarURLs["+ i +"] = " + avatarURLs[i]);
-    msg.channel.send(avatarURLs[i]);
-  }
-} else {
-  for (i = 0; i < sum; i++) {
-    console.log("\navatarURLs["+ i +"] = " + avatarURLs[i]);
-    msg.channel.send(avatarURLs[i]);
-  }
+for (i = 0; i <= sumMentioned; i++) {
+  console.log("\navatarURLs["+ i +"] = " + avatarURLs[i]);
+  msg.channel.send(avatarURLs[i]);
 }
 
 // References:
