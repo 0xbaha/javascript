@@ -1,9 +1,9 @@
 // this sample implemented in Discord command
 
-var authorAvatarURL = msg.author.displayAvatarURL();
-var sum = msg.mentions.users.size;  // sum of mentioned users
+var authorAvatarURL = msg.author.displayAvatarURL();  // author avatar
+var size = msg.mentions.users.size;                   // size of mentioned users
+var Mentioned = msg.mentions.users;                   // the mentioned users
 var isMentioned = false;
-var Mentioned = msg.mentions.users; // the mentioned users
 
 // takes a JavaScript object and then transforms it into a JSON string.
 var MentionedSTR = JSON.stringify(Mentioned);   
@@ -13,29 +13,32 @@ var MentionedSTRbeauty = JSON.stringify(Mentioned, null, 4);
 // print author avatar
 console.log("\n>>> authorAvatarURL = " + authorAvatarURL);
 
-// print all to console
+// check if there mentioned user exist
 if (sum > 0) {
-  isMentioned = true;
+  isMentioned = true; // exist
   console.log("\nADA mention");
   console.log("\n\n>>> sum = " + sum);
   console.log("\n\n>>> msg.mentions.users <<<\n\n" + Mentioned);
   console.log("\n\n>>> JSON.stringify(Mentioned) <<<\n\n" + MentionedSTR);  // print the object
   console.log("\n\n>>> JSON.stringify(Mentioned, null, 4) <<<\n\n" + MentionedSTRbeauty);  // beautify
 } else {
-  isMentioned = false;
+  isMentioned = false; // not exist
   console.log("\nTIDAK ada mention");
 }
 
-// print the ID of each mentioned user
+
 avatarURLs = []; // inisialisasi
+// print the ID of each mentioned user
 console.log("\n>>> print the ID of each mentioned user <<<\n");
 if (isMentioned){
-  for (i = 0; i < sum; i++) {
+// if mentioned users are exist
+  for (i = 0; i < size; i++) {
     console.log("ID = " + JSON.parse(MentionedSTR)[i].id);
     // menambahkan URL avatar format PNG ke array
     avatarURLs.push(JSON.parse(MentionedSTR)[i].displayAvatarURL.replace(/webp/gi,"png?size=2048"));
   }
 } else {
+// if mentioned user not exist
   avatarURLs.push(authorAvatarURL.replace(/webp/gi,"png?size=2048"));
 }
 
