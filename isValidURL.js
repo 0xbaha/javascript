@@ -40,3 +40,9 @@ console.log(isValidURL(testCase7)); // return false
 
 var testCase8 = "https://sdfasdp.ppppppppppp";
 console.log(isValidURL(testCase8)); // return false
+
+var testCase9 = "google.com"
+console.log(isValidURL(testCase9)); // return true
+
+var testCase10 = "google.co"
+console.log(isValidURL(testCase10)); // return true
