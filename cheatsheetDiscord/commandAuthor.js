@@ -1,5 +1,9 @@
-// Command Author Tag
-msg.author.tag
+// Command Author
+msg.author          // object (mentioned)
+msg.author.tag      // tag
+msg.author.id       // ID
+msg.author.bot      // bot (true/false)
+member.displayName  // nickname
 
 // Command Author Avatar URL
 msg.author.displayAvatarURL();
