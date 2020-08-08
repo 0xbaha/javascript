@@ -7,10 +7,12 @@ msg.author.username       // username
 msg.author.discriminator  // discriminator
 member.displayName        // nickname
 
-msg.author.createdAt
+msg.author.createdAt        // account created date
+member.joinedAt             // joined date to server
+member.roles.cache.array()  // role at server
 
 // Command Author Avatar URL
 msg.author.displayAvatarURL();
 msg.author.displayAvatarURL({ format: "png", dynamic: true, size: 2048 });
 
-member.roles.cache.array()
+
