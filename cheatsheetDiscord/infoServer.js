@@ -13,8 +13,8 @@ console.log("# of Channels  = " + msg.guild.channels.cache.size);
 console.log("Verification Level       = " + msg.guild.verificationLevel); 
 console.log("Explicit Content Filter  = " + msg.guild.explicitContentFilter); 
 
-console.log("Count of Text Channels   = " + msg.guild.channels.cache.find(c => c.type === 'text').length);
-console.log("Count of Voice Channels  = " + msg.guild.channels.cache.find(c => c.type === 'voice').length);
+console.log("Count of Text Channels   = " + msg.guild.channels.cache.filter(c => c.type === 'text').size);
+console.log("Count of Voice Channels  = " + msg.guild.channels.cache.filter(c => c.type === 'voice').size);
 
 console.log("Online members = " + msg.guild.members.cache.filter(m => m.user.presence.status === "online").size); 
 console.log("Offine members = " + msg.guild.members.cache.filter(m => m.user.presence.status === "offline").size); 
