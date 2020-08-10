@@ -1,6 +1,6 @@
 console.log("Name           = " + msg.guild.name);
 console.log("ID             = " + msg.guild.id);
-console.log("Icon URL       = " + msg.guild.iconURL({ dynamic: true })); 
+console.log("Icon URL       = " + msg.guild.iconURL({ format: "png", dynamic: true, size: 2048 })); 
 console.log("Region         = " + msg.guild.region); 
 console.log("Creation Date  = " + msg.guild.createdAt); 
 console.log("Owner ID       = " + server.ownerID);
