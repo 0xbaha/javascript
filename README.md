@@ -1,6 +1,7 @@
 # Catatan JS
 ![GitHub repo size](https://img.shields.io/github/repo-size/ace-id/catatan-js)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/ace-id/catatan-js)
+![GitHub top language](https://img.shields.io/github/languages/top/ace-id/catatan-js)
 ![GitHub last commit](https://img.shields.io/github/last-commit/ace-id/catatan-js)
 ![GitHub](https://img.shields.io/github/license/ace-id/catatan-js)
 
