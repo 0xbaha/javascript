@@ -16,3 +16,6 @@ Kumpulan source kode dalam bahasa C untuk pembelajaran dasar pemrograman dan apl
 - [REPL](https://repl.it/languages/JavaScript)
 - [Rextester](https://rextester.com/l/js_online_compiler)
 - [Tutorials Point](https://www.tutorialspoint.com/online_javascript_editor.php)
+
+## Reading Material
+- [Coding Style](https://javascript.info/coding-style)
